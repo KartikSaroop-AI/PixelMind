@@ -1,3 +1,13 @@
+<p align="center" style="margin: 0; padding: 0;">
+  <img 
+    src="https://github.com/KartikSaroop-AI/PixelMind/blob/main/pixelmind.png.png"
+    alt="PixdelMind Banner"
+    width="1000"
+    height="300"
+    style="display: block; object-fit: cover; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);"
+  />
+</p>
+
 <h1 align="center">👁️ PixelMind</h1>
 <p align="center">Decoding intelligence through pixels — an exploration of Computer Vision, from classical image processing to modern visual cognition using Deep Learning.</p>
 
