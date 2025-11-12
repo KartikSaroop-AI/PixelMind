@@ -32,28 +32,25 @@ It bridges mathematical intuition with implementation — translating pixels int
 
 ## 🗂️ Table of Contents
 
-| No. | Section | Focus Area | Status |
-|:---:|:--------|:------------|:--------|
-| 1 | [Image Processing Fundamentals](#1--image-processing-fundamentals) | Filters, gradients, histograms | ✅ Completed |
-| 2 | [Feature Detection & Matching](#2--feature-detection--matching) | SIFT, ORB, FAST, descriptors | 🟡 In Progress |
-| 3 | [Image Segmentation](#3--image-segmentation) | Thresholding, U-Net, Mask R-CNN | 🔜 Upcoming |
-| 4 | [Object Detection](#4--object-detection) | YOLO, SSD, Faster R-CNN | 🟢 Active |
-| 5 | [Image Classification](#5--image-classification) | CNNs, transfer learning | ✅ Completed |
-| 6 | [Face Detection & Recognition](#6--face-detection--recognition) | Haar cascades, FaceNet | 🟡 In Progress |
-| 7 | [Pose Estimation](#7--pose-estimation) | OpenPose, MediaPipe, keypoints | 🔜 Upcoming |
-| 8 | [Image Generation & Restoration](#8--image-generation--restoration) | Autoencoders, GANs, Diffusion | 🧩 Planned |
-| 9 | [Vision Transformers (ViTs)](#9--vision-transformers-vits) | Patch embeddings, attention | 🟢 Active |
-| 10 | [3D Computer Vision](#10--3d-computer-vision) | Depth estimation, stereo vision | 🔜 Upcoming |
-| 11 | [Optical Flow & Motion Analysis](#11--optical-flow--motion-analysis) | Lucas–Kanade, Farnebäck | 🧩 Planned |
-| 12 | [Explainable CV & Visualization](#12--explainable-cv--visualization) | Grad-CAM, saliency maps | 🟡 In Progress |
-| 13 | [Applied Projects](#13--applied-projects) | Real-world CV applications | 🧠 Ongoing |
+| No. | Section | Focus Area |
+|:---:|:--------|:------------|
+| 1 | [Image Processing Fundamentals](#1--image-processing-fundamentals) | Filtering, histograms, morphology |
+| 2 | [Feature Detection & Matching](#2--feature-detection--matching) | SIFT, ORB, Harris, FLANN |
+| 3 | [Image Segmentation](#3--image-segmentation) | Thresholding, U-Net, Mask R-CNN |
+| 4 | [Object Detection](#4--object-detection) | YOLO, SSD, Faster R-CNN |
+| 5 | [Image Classification](#5--image-classification) | CNNs, transfer learning |
+| 6 | [Face & Pose Recognition](#6--face--pose-recognition) | FaceNet, MediaPipe, OpenPose |
+| 7 | [Image Generation & Restoration](#7--image-generation--restoration) | Autoencoders, GANs, Diffusion |
+| 8 | [Vision Transformers (ViTs)](#8--vision-transformers-vits) | Attention, patch embeddings |
+| 9 | [Optical Flow & Motion Tracking](#9--optical-flow--motion-tracking) | Lucas–Kanade, DeepSort |
+| 10 | [Explainable & Applied Vision](#10--explainable--applied-vision) | Grad-CAM, Visual Analytics, Real Projects |
 
 ---
 
 ## 1️⃣ Image Processing Fundamentals
 **Experiments:**
-- Grayscale, filtering, edge detection (Sobel, Canny)
-- Histogram equalization and CLAHE
+- Grayscale transformations, edge detection (Sobel, Canny)
+- Histogram equalization, CLAHE
 - Morphological operations (erosion, dilation)
 
 📓 [Notebook: Image_Fundamentals.ipynb](Notebooks/Image_Fundamentals.ipynb)
@@ -62,95 +59,70 @@ It bridges mathematical intuition with implementation — translating pixels int
 
 ## 2️⃣ Feature Detection & Matching
 **Experiments:**
-- SIFT, ORB, FAST, and Harris Corner
-- Feature matching (FLANN, BFMatcher)
-- Object localization using keypoints
+- SIFT, ORB, and Harris corner detectors  
+- FLANN and Brute-Force Matching  
+- Object localization using keypoints  
 
-📓 [Notebook: Feature_Matching.ipynb](Notebooks/Feature_Matching.ipynb)  
-📘 [Article: Feature_Descriptors.pdf](Docs/Feature_Descriptors.pdf)
+📓 [Notebook: Feature_Matching.ipynb](Notebooks/Feature_Matching.ipynb)
 
 ---
 
 ## 3️⃣ Image Segmentation
-**Focus:**  
-- Thresholding, clustering (K-Means, Watershed)
-- U-Net and Mask R-CNN
-- Semantic vs Instance segmentation
+**Focus:**
+- Thresholding, clustering (K-Means, Watershed)  
+- U-Net, Mask R-CNN  
+- Semantic vs. instance segmentation  
 
 ---
 
 ## 4️⃣ Object Detection
-**Focus:**  
-- YOLOv8, Faster R-CNN, and SSD
-- Real-time detection with MMDetection
-- Performance metrics (IoU, mAP)
-
-📓 [Notebook: Object_Detection_YOLO.ipynb](Notebooks/Object_Detection_YOLO.ipynb)
+**Focus:**
+- YOLOv8, Faster R-CNN, SSD  
+- Real-time detection using MMDetection  
+- Metrics: IoU, mAP  
 
 ---
 
 ## 5️⃣ Image Classification
-**Experiments:**  
-- CNN from scratch on CIFAR-10  
-- Transfer learning (VGG16, ResNet, EfficientNet)  
-- Visualization with Grad-CAM  
-
----
-
-## 6️⃣ Face Detection & Recognition
-**Topics:**
-- Haar cascades and HOG  
-- Deep metric learning with FaceNet / ArcFace  
-
----
-
-## 7️⃣ Pose Estimation
 **Focus:**
-- OpenPose multi-person detection  
-- MediaPipe skeleton extraction  
+- CNNs from scratch (CIFAR-10)  
+- Transfer learning (ResNet, EfficientNet)  
+- Grad-CAM visualization  
 
 ---
 
-## 8️⃣ Image Generation & Restoration
-**Topics:**
-- Autoencoders, GANs, and Diffusion models  
-- Denoising and super-resolution  
-
----
-
-## 9️⃣ Vision Transformers (ViTs)
-**Topics:**
-- Patch embeddings, positional encoding  
-- Attention mechanisms in image understanding  
-
----
-
-## 10️⃣ 3D Computer Vision
+## 6️⃣ Face & Pose Recognition
 **Focus:**
-- Depth estimation and structure-from-motion  
-- 3D reconstruction using stereo vision  
+- Haar cascades, FaceNet, ArcFace  
+- MediaPipe pose extraction, OpenPose  
 
 ---
 
-## 11️⃣ Optical Flow & Motion Analysis
-**Experiments:**
-- Lucas–Kanade and Farnebäck flow  
-- Object tracking (KLT, CSRT)  
-
----
-
-## 12️⃣ Explainable CV & Visualization
+## 7️⃣ Image Generation & Restoration
 **Focus:**
-- Grad-CAM, LIME, SHAP visual explanations  
-- Visualizing activations and filters  
+- Autoencoders, GANs, Diffusion Models  
+- Super-resolution and denoising  
 
 ---
 
-## 13️⃣ Applied Projects
-- Real-time lane detection  
-- Object tracking with YOLO + DeepSort  
-- Image captioning and VQA  
-- Visual anomaly detection  
+## 8️⃣ Vision Transformers (ViTs)
+**Focus:**
+- Patch embeddings, positional encodings  
+- Attention in visual representations  
+
+---
+
+## 9️⃣ Optical Flow & Motion Tracking
+**Focus:**
+- Lucas–Kanade and Farnebäck optical flow  
+- Object tracking (KLT, DeepSORT)  
+
+---
+
+## 🔟 Explainable & Applied Vision
+**Focus:**
+- Grad-CAM, SHAP, and visual interpretability  
+- Lane detection, object tracking, and anomaly detection  
 
 ---
 
